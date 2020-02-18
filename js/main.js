@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 
 
 	$("#ContactUs").click(function(){
-		let tempData = {formType: "contact"}
+		let tempData = {formType: "contact", baseSite:"communityhealthofficer"}
 		let inputs = document.getElementById("contact-section").getElementsByClassName("form-control")
 		for (i of inputs){
 			tempData[i.placeholder]= i.value
@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 	  });
 
 	  $("#SubscribeUs").click(function(){
-		let tempData = {formType: "subscribe"}
+		let tempData = {formType: "subscribe", baseSite:"communityhealthofficer"}
 		let inputs = document.getElementById("form-subscribe").getElementsByClassName("form-control")
 		for (i of inputs){ tempData[i.placeholder]= i.value }
 		
